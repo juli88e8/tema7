@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    h2 {
+        padding: 30px;
+        padding-bottom: 2px;
+    }
+
+
+    article {
+        padding-left: 30px;
+        padding-right: 30px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    img {
+        width: 50vw;
+        padding-top: 10px;
+    }
+
+
+    footer {
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    article+h2 {
+        padding-bottom: 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1 style="text-align: center">Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+
+
+            <article>
+                <img src="https://placeimg.com/400/300/any" alt="Tablet" style="padding-left: 30px, padding-right">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis beatae quod porro facilis. Numquam possimus, dolores id. Assumenda numquam, officia repellendus aliquid ea et minus optio omnis consequatur quasi delectus.</p>
+            </article>
+
+            <article>
+                <img src="https://placeimg.com/400/300/any" alt="">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rerum quis, fugit porro molestias consequuntur repellendus quasi assumenda sint nisi harum, reiciendis, sit sed atque repellat. Officia voluptates, consectetur cum.</p>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+
+    <script>
+        const pic1 = document.querySelector("article:nth-child(1) img");
+        console.log(pic1);
+
+        pic1.src = "kat.jpg";
+        pic1.alt = "Det her er en kat";
+
+        const pic2 = document.querySelector("article:nth-child(2) img");
+        console.log(pic2);
+
+        pic2.src = "dame.jpg";
+        pic2.alt = "Gå tur med hund";
+
+        let mainSection = document.querySelector("section");
+
+        let newArticle = document.createElement("article");
+        let overskrift = document.createElement("h3")
+        let overskriftTxt = document.createTextNode("Article 3");
+        let text = document.createElement("p");
+        let ptext = document.createTextNode("Schooner parrel hornswaggle rutters jack red ensign capstan list Yellow Jack Jolly Roger.");
+        let billede = document.createElement("img");
+
+
+        overskrift.appendChild(overskriftTxt);
+        newArticle.appendChild(overskrift);
+
+        text.appendChild(ptext);
+        newArticle.appendChild(text);
+
+        billede.src = "https://placeimg.com/640/480/any";
+
+        newArticle.appendChild(billede);
+
+
+
+
+
+
+        mainSection.appendChild(newArticle);
+    </script>
+
+</body></html>
