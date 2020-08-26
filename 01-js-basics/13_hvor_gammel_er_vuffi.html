@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+
+    <p>Hvor gammel er din hund i menneske år (Gammel metode)</p>
+    <input type="text" id="oldAlder">
+
+    <button id="oldButton">Regn alder - Gammel metode, kig i konsol</button>
+
+    <p>Hvor gammel er din hun i menneske år (Ny metode)</p>
+    <input type="text" id="nyAlder">
+
+    <button id="newButton">Regn alder - Ny metode, kig i konsol</button>
+
+
+    <script>
+        document.querySelector("#oldButton").addEventListener("click", regnOld);
+
+
+        function regnOld() {
+            let oldAlder = document.querySelector("#oldAlder").value;
+            let oldMetode = oldAlder * 7;
+            console.log(`Din hun er ${oldMetode} i menneske år`);
+        }
+
+        document.querySelector("#newButton").addEventListener("click", regnNew);
+
+        function regnNew() {
+            let nyAlder = document.querySelector("#nyAlder").value;
+            let nyMetode = 16 * Math.log(nyAlder) + 31;
+            console.log(`Din hun er ${nyMetode} i menneske år`);
+        }
+    </script>
+</body></html>
