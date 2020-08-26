@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="html-struktur.css">
+</head>
+
+<body>
+    <header id="titel">
+        <h1 style="text-align: center">Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+
+
+            <article>
+                <img src="https://placeimg.com/400/300/any" alt="" style="padding-left: 30px, padding-right">
+                <h3 id="undertitel1">Article 1</h3>
+                <p id="tekst1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis beatae quod porro facilis. Numquam possimus, dolores id. Assumenda numquam, officia repellendus aliquid ea et minus optio omnis consequatur quasi delectus.</p>
+            </article>
+
+            <article>
+                <img src="https://placeimg.com/400/300/any" alt="" style="padding-left: 30px, padding-right">
+                <h3 id="undertitel2">Article 2</h3>
+                <p id="tekst2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rerum quis, fugit porro molestias consequuntur repellendus quasi assumenda sint nisi harum, reiciendis, sit sed atque repellat. Officia voluptates, consectetur cum.</p>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        console.log("sidenVises");
+
+        function start() {
+            titel.innerHTML = "<h1>noget andet</h1>";
+            undertitel1.innerHTML = "<h3>Titel ændret</h3>";
+            undertitel2.textContent = "Denne underoverskrift er ændret";
+            tekst1.textContent = "Interloper capstan dance the hempen jig boom pirate spirits fire in the hole barkadeer black jack black spot. Bilge rat Shiver me timbers gally maroon holystone lass black spot blow the man down American Main draft. Clap of thunder careen flogging Buccaneer rutters Corsair fire in the hole loaded to the gunwalls matey hands."
+
+            tekst2.innerHTML = "<p>Booty fluke topmast grapple Jolly Roger swab furl splice the main brace Sink me pirate. Execution dock crow's nest black spot doubloon nipper lugsail black jack barkadeer Sail ho snow. Scuppers run a rig trysail matey Sea Legs keelhaul brigantine dead men tell no tales hardtack blow the man down.</p>"
+
+            img1.alt = "Billede tekst";
+            img2.alt = "Det her er teksten til billedet";
+
+            img1.src = "cross.jpg";
+            img2.src = "skov.jpg";
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
