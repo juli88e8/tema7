@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="html-struktur.css">
+</head>
+
+<body>
+    <header id="titel">
+        <h1 style="text-align: center">Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+
+
+            <article>
+                <img src="https://placeimg.com/400/300/arch?t" alt="" style="padding-left: 30px, padding-right">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis beatae quod porro facilis. Numquam possimus, dolores id. Assumenda numquam, officia repellendus aliquid ea et minus optio omnis consequatur quasi delectus.</p>
+            </article>
+
+            <article>
+                <img src="https://placeimg.com/401/300/arch?t" alt="">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rerum quis, fugit porro molestias consequuntur repellendus quasi assumenda sint nisi harum, reiciendis, sit sed atque repellat. Officia voluptates, consectetur cum.</p>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+
+    <script>
+        let pic1;
+        document.addEventListener("DOMContentLoaded", start);
+
+
+        function start() {
+            console.log("sidenVises");
+            pic1 = document.querySelector("article:nth-child(1) img");
+
+            pic1.addEventListener("click", changePic);
+        }
+
+        function changePic(){
+            pic1.src = "https://placeimg.com/401/300/arch?t" + Math.round(Math.random()*9)+1;
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
