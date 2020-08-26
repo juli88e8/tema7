@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    h2 {
+        padding: 30px;
+        padding-bottom: 2px;
+    }
+
+
+    article {
+        padding-left: 30px;
+        padding-right: 30px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    img {
+        width: 50vw;
+        padding-top: 10px;
+    }
+
+
+    footer {
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    article+h2 {
+        padding-bottom: 20px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1 style="text-align: center">Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+
+
+            <article>
+                <img src="placeimg_640_480_any.jpg" alt="Tablet" style="padding-left: 30px, padding-right">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis beatae quod porro facilis. Numquam possimus, dolores id. Assumenda numquam, officia repellendus aliquid ea et minus optio omnis consequatur quasi delectus.</p>
+            </article>
+
+            <article>
+                <img src="placeimg_640_480_tech.jpg" alt="Kode">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rerum quis, fugit porro molestias consequuntur repellendus quasi assumenda sint nisi harum, reiciendis, sit sed atque repellat. Officia voluptates, consectetur cum.</p>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+
+    <script>
+        const overskrift = document.querySelector("h1");
+        overskrift.textContent;
+        console.log(overskrift.textContent);
+
+        const underoverskrift = document.querySelector("h2");
+        underoverskrift.textContent;
+        console.log(underoverskrift.textContent);
+
+        const titel = document.querySelector("h3");
+        titel.textContent;
+        console.log(titel.textContent);
+
+        const tekst = document.querySelector("p");
+        tekst.textContent;
+        console.log(tekst.textContent);
+
+        const titel2 = document.querySelector("article:nth-child(2)");
+        titel2.textContent;
+        console.log(titel2.textContent);
+
+
+        const footer = document.querySelector("footer p");
+        footer.textContent;
+        console.log(footer.textContent);
+
+    </script>
+
+</body>
+
+</html>
