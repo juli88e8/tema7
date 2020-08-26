@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p>Din alder</p>
+    <input type="text" id="dinAlder">
+
+    <p>Din dates alder</p>
+    <input type="text" id="dateAlder">
+
+    <button>Klik for at se om reglen er overholdt, kig i konsollen</button>
+
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let dinAlder = document.querySelector("#dinAlder").value;
+            let dateAlder = document.querySelector("#dateAlder").value;
+            let udregnAlder = dinAlder / 2 + 7;
+
+
+
+
+            if (dinAlder <= 15 || dateAlder <= 15) {
+                console.log("Alder er ikke høj nok");
+            } else if (dateAlder >= udregnAlder) {
+                console.log("Tillykke date løs!");
+            } else {
+                console.log("Øv! Den går vist ikke")
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>
