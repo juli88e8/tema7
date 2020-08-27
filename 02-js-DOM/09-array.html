@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+
+<style>
+    #display {
+        width: 20vw;
+        height: 20vw;
+        border: 1px solid black;
+        margin: 7vw;
+        padding: 1vw;
+
+    }
+</style>
+
+
+
+<body>
+
+
+    <div id="display"></div>
+
+
+    <script>
+        let playlist = ["Better", "Lost in the fire", "Dreams", "I think", "Perfect places", "Electric feel", "Nights", "Secrets", "Hurt you", "Lust for life"];
+        playlist.forEach(sang => {
+            document.querySelector("#display").innerHTML += `${sang} <br/>`;
+        })
+
+        playlist.forEach((sang, index) => console.log(sang, index));
+    </script>
+</body></html>
